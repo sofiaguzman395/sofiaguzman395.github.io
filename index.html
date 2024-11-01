@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        .container {
+            text-align: center;
+            width: 300px;
+        }
+        img.logo {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .input-container {
+            margin: 20px 0;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .subscribe {
+            margin: 15px 0;
+            font-size: 14px;
+            color: #333;
+        }
+        .subscribe a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .subscribe a:hover {
+            text-decoration: underline;
+        }
+        .divider {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            color: #333;
+        }
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #ccc;
+        }
+        .divider::before {
+            margin-right: 10px;
+        }
+        .divider::after {
+            margin-left: 10px;
+        }
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #333;
+        }
+        .social-button img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://auth.openai.com/assets/openai-logo-DmWoKcI3.svg" alt="Logo" class="logo">
+        <h1>Bienvenidos</h1>
+        <div class="input-container">
+            <input type="email" placeholder="Dirección de correo electrónico">
+            <button>Continuar</button>
+        </div>
+        <div class="subscribe">
+            ¿No tienes una cuenta? <a href="#">Suscríbete</a>
+        </div>
+        <div class="divider">o</div>
+        <div class="social-buttons">
+            <a href="#" class="social-button">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-logo-icon-download-in-svg-png-gif-file-formats--brands-pack-logos-icons-189824.png" alt="Google Logo"> Continuar con Google
+            </a>
+            <a href="#" class="social-button">
+                <img src="https://auth.openai.com/assets/microsoft-logo-BUXxQnXH.svg" alt="Microsoft Logo"> Continuar con una cuenta de Microsoft
+            </a>
+            <a href="#" class="social-button">
+                <img src="https://auth.openai.com/assets/apple-logo-vertical-full-bleed-tAoxPOUx.svg" alt="Apple Logo"> Continuar con Apple
+            </a>
+        </div>
+    </div>
+</body>
+</html>
